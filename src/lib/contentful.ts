@@ -1,8 +1,10 @@
+export type Post = { id: string; title: string; content: string; url: string }
+
 export async function fetchPosts() {
   // Simulate a sample response with a delay (e.g., 500ms)
   const response = await new Promise<{
     ok: boolean
-    json: () => { id: string; title: string; content: string; url: string }[]
+    json: () => Post[]
   }>((resolve) =>
     setTimeout(
       () =>

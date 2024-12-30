@@ -1,6 +1,6 @@
 import { Metadata } from "next"
 import Link from "next/link"
-import { fetchPosts } from "app/lib/contentful"
+import { fetchPosts } from "src/lib/contentful"
 
 export const metadata: Metadata = {
   title: "Cazcanes Tequila",

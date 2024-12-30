@@ -36,8 +36,8 @@ const tooltipArrow = cva([], {
 })
 
 export interface TooltipProps extends VariantProps<typeof tooltipContent>, RadixTooltip.TooltipProps {
-  explainer: React.ReactElement | string
-  children: React.ReactElement
+  explainer: React.ReactElement<unknown> | string
+  children: React.ReactElement<unknown>
   className?: string
   withArrow?: boolean
   side?: "top" | "right" | "bottom" | "left"
